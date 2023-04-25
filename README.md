@@ -9,7 +9,7 @@ The PlayerZero exporter is an otlphttp exporter for logs with a fatal or error s
 ### Configuration
 `Endpoint` = "https://sdk.playerzero.app/otlp"
 
-`Headers` =  {"X-PlayerZeroSdk": "OpenTelemetry 1.0.0", "Authorization": "Bearer \<your-playerzero-api-token>"}
+`Headers` =  {"Authorization": "Bearer \<your-playerzero-api-token>"}
 
 
 ### Config File Example
@@ -19,6 +19,5 @@ exporters:
   otlphttp/playerzero:
     endpoint: "https://sdk.playerzero.app/otlp"
     headers:
-      X-PlayerZeroSdk: "OpenTelemetry 1.0.0"
-      Authorization: "Bearer \<your-playerzero-api-token>"
+      Authorization: "Bearer <your-playerzero-api-token>"
 ```
